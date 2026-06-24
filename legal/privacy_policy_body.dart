@@ -1,34 +1,23 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="恰恰好扫描 隐私政策 - 长沙市恰恰好科技有限公司">
-  <title>隐私政策 - 恰恰好扫描</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <header class="site-header">
-    <div class="container">
-      <a href="index.html" class="logo">
-        <span class="logo-icon">Q</span>
-        <span>Qiaqiaok</span>
-      </a>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="index.html">首页</a></li>
-          <li><a href="index.html#contact">联系我们</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+/// 隐私政策正文 HTML（官网 privacy.html 唯一内容源）。
+String buildPrivacyPolicyBody({
+  required String companyName,
+  required String companyNameEn,
+  required String displayName,
+  required String productEnLine,
+  required String contactEmail,
+  required String address,
+  required String siteDomain,
+  required int year,
+}) {
+  final productLabel = productEnLine.isNotEmpty
+      ? '$displayName $productEnLine'
+      : displayName;
+  final emailLink = '<a href="mailto:$contactEmail">$contactEmail</a>';
 
-  <main class="legal-page">
-    <div class="container" style="max-width:720px">
-      <h1>隐私政策</h1>
-      <p>长沙市恰恰好科技有限公司（以下简称「我们」）深知个人信息对您的重要性，将依法保护您的个人信息安全。本《隐私政策》适用于 恰恰好扫描 （Just Right Scan） 应用（以下简称「本应用」）。</p>
+  return '''
+      <p>$companyName（以下简称「我们」）深知个人信息对您的重要性，将依法保护您的个人信息安全。本《隐私政策》适用于 $productLabel 应用（以下简称「本应用」）。</p>
 
-      <p class="legal-meta">生效日期：2026 年 1 月 1 日 · 运营方：长沙市恰恰好科技有限公司 · 官网：www.qiaqiaok.com</p>
+      <p class="legal-meta">生效日期：$year 年 1 月 1 日 · 运营方：$companyName · 官网：$siteDomain</p>
 
       <p>请您在使用前仔细阅读本政策。我们可能对重要条款进行加粗或特别提示。您使用或继续使用本应用，即表示您理解并同意本政策；如您不同意，请停止使用。</p>
 
@@ -115,12 +104,12 @@
         <li>获取个人信息副本（在符合国家网信部门规定条件下）；</li>
         <li>向网信、公安等监管部门投诉举报。</li>
       </ul>
-      <p>由于数据主要存储在本地，您可在应用内删除文档、在系统设置中关闭或撤回权限。如需协助行使权利，请发送邮件至 <a href="mailto:contact@qiaqiaok.com">contact@qiaqiaok.com</a>，我们将在十五个工作日内或法律法规规定的期限内处理。</p>
+      <p>由于数据主要存储在本地，您可在应用内删除文档、在系统设置中关闭或撤回权限。如需协助行使权利，请发送邮件至 $emailLink，我们将在十五个工作日内或法律法规规定的期限内处理。</p>
       <p>在以下情形我们可能无法响应您的请求：与履行法律法规义务相关；与国家安全、公共安全直接相关；与刑事侦查、起诉、审判和执行直接相关；有充分证据表明您存在主观恶意或滥用权利；响应将严重损害您或其他个人、组织的合法权益；涉及商业秘密等。</p>
 
       <h2>八、我们如何处理未成年人个人信息</h2>
       <p><strong>8.1</strong> 本应用主要面向成年人。若您未满十八周岁，请在监护人陪同下阅读本政策并在监护人同意后使用。</p>
-      <p><strong>8.2</strong> 我们不会在明知的情况下主动收集未满十四周岁儿童的个人信息。若监护人发现儿童未经同意向我们提供了个人信息，请通过 <a href="mailto:contact@qiaqiaok.com">contact@qiaqiaok.com</a> 联系我们，我们将尽快删除相关信息。</p>
+      <p><strong>8.2</strong> 我们不会在明知的情况下主动收集未满十四周岁儿童的个人信息。若监护人发现儿童未经同意向我们提供了个人信息，请通过 $emailLink 联系我们，我们将尽快删除相关信息。</p>
 
       <h2>九、逝者近亲属的权利</h2>
       <p>逝者生前未明示不同意处理的，其近亲属可基于合法、正当利益，行使查阅、复制、更正、删除等权利，请通过本政策联系方式与我们联系。</p>
@@ -131,23 +120,11 @@
       <h2>十一、如何联系我们</h2>
       <p>如对本隐私政策有任何疑问，请联系：</p>
       <ul>
-        <li>公司名称：长沙市恰恰好科技有限公司</li>
-        <li>英文名称：Changsha Qiaqiahao Technology Co., Ltd.</li>
-        <li>联系邮箱：<a href="mailto:contact@qiaqiaok.com">contact@qiaqiaok.com</a></li>
-        <li>公司地址：湖南湘江新区望岳街道杜鹃路858号奥克斯缤纷广场5号地块1栋、2栋、商业及地下室2406、2407、2408、2409-1078</li>
+        <li>公司名称：$companyName</li>
+        <li>英文名称：$companyNameEn</li>
+        <li>联系邮箱：$emailLink</li>
+        <li>公司地址：$address</li>
       </ul>
       <p>我们将在十五个工作日内或法律法规规定的期限内回复您的请求。如您对我们的答复不满意，特别是认为我们的个人信息处理行为损害了您的合法权益，您可向网信、公安等监管部门投诉举报，或向有管辖权的人民法院提起诉讼。</p>
-
-    </div>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <span>© 2026 长沙市恰恰好科技有限公司</span>
-      <ul class="footer-links">
-        <li><a href="index.html">返回首页</a></li>
-      </ul>
-    </div>
-  </footer>
-</body>
-</html>
+''';
+}
