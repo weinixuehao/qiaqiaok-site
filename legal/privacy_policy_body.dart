@@ -93,10 +93,17 @@ String buildPrivacyPolicyBody({
       </ul>
 
       <h2>四、第三方 SDK 与第三方服务</h2>
-      <p>为实现登录、支付、运行统计与故障排查，本应用可能接入以下第三方服务（具体以您使用的功能及版本为准）：</p>
+      <p>为实现登录、分享、支付、运行统计与故障排查，本应用可能接入以下第三方服务（具体以您使用的功能及版本为准）。我们会在征得您同意后按需初始化相关 SDK：</p>
       <ul>
         <li><strong>Apple 登录 / App Store：</strong>用于账号登录与应用内购买，由 Apple 按其隐私政策处理相关信息；</li>
-        <li><strong>微信开放平台（如已启用）：</strong>用于微信登录，由腾讯按其隐私政策处理授权相关信息；</li>
+        <li>
+          <strong>微信 OpenSDK Android（com.tencent.mm.opensdk）：</strong>
+          开发者：深圳市腾讯计算机系统有限公司。
+          使用目的：微信登录、分享至微信等能力。
+          处理的信息类型：经您授权后的微信昵称、头像及为实现能力所必需的设备相关信息（如是否安装微信）；分享时由您主动选择的图片或内容。
+          隐私政策：
+          <a href="https://support.weixin.qq.com/cgi-bin/mmsupportacctnodeweb-bin/pages/RYiYJkLOrQwu0nb8" target="_blank" rel="noopener">微信 Open SDK 个人信息处理规则</a>
+        </li>
         <li><strong>Google Firebase（Analytics、Crashlytics）：</strong>在您同意本应用隐私政策后，我们可能收集设备信息、崩溃日志、使用情况等用于统计分析与故障排查，数据由 Google 处理；您可在系统或应用设置中关闭相关收集（如适用）。</li>
       </ul>
       <p>更多共享情形详见应用内《个人信息第三方共享清单》。如未来接入其他 SDK，我们将更新本政策与共享清单并依法征得同意（无需同意的法定情形除外）。</p>
