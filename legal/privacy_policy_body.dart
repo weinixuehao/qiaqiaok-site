@@ -68,7 +68,7 @@ String buildPrivacyPolicyBody({
         <li>积分余额、充值与消费记录（用于积分发放、扣减与争议处理）。</li>
       </ul>
       <p>上述信息将存储于中华人民共和国境内我们的服务器（$siteDomain 相关服务），仅在实现登录、积分及会员相关功能所必需的期限内保存。您可在应用内通过「我的 → 安全与隐私 → 注销账号」申请注销；注销后我们将删除或匿名化您的账号及关联服务端数据（法律法规另有规定或我们依法须保留的除外）。</p>
-      <p>积分充值通过 Apple App Store 等应用商店渠道完成，支付与订单处理由相应渠道按其规则进行，我们仅接收完成交易所必需的信息（如交易凭证、商品标识）。</p>
+      <p>积分充值：iOS 通过 Apple App Store 内购完成；Android 通过微信支付完成。支付与订单处理由相应渠道按其规则进行，我们仅接收完成交易所必需的信息（如交易凭证、商品标识、支付订单标识与支付状态）。</p>
 
       <h3>（十）依法无需征得同意的情形</h3>
       <p>根据法律法规，以下情形处理个人信息无需征得您的同意：</p>
@@ -108,8 +108,8 @@ String buildPrivacyPolicyBody({
       <ul>
         <li><strong>SDK 名称：</strong>微信OpenSDK Android（包名：com.tencent.mm.opensdk）</li>
         <li><strong>开发者：</strong>深圳市腾讯计算机系统有限公司</li>
-        <li><strong>目的：</strong>微信登录、分享至微信（本应用不使用微信支付能力）</li>
-        <li><strong>收集信息范围：</strong>用户主动选择的图片/内容；经用户授权后主动选择的微信头像、昵称信息；验证设备是否安装微信 APP 的状态（未安装则无法使用相关能力）</li>
+        <li><strong>目的：</strong>微信登录、分享至微信、Android 端积分充值（微信支付）</li>
+        <li><strong>收集信息范围：</strong>用户主动选择的图片/内容；经用户授权后主动选择的微信头像、昵称信息；验证设备是否安装微信 APP 的状态（未安装则无法使用相关能力）；发起支付时由本应用生成的支付订单标识及支付成功/失败状态</li>
         <li><strong>SDK 隐私政策链接：</strong><a href="https://support.weixin.qq.com/cgi-bin/mmsupportacctnodeweb-bin/pages/RYIYJkLOrQwu0nb8" target="_blank" rel="noopener">https://support.weixin.qq.com/cgi-bin/mmsupportacctnodeweb-bin/pages/RYIYJkLOrQwu0nb8</a></li>
       </ul>
 
@@ -117,7 +117,7 @@ String buildPrivacyPolicyBody({
       <ul>
         <li><strong>SDK 名称：</strong>微信Open SDK for iOS</li>
         <li><strong>开发者：</strong>深圳市腾讯计算机系统有限公司</li>
-        <li><strong>目的：</strong>微信登录、分享至微信（本应用不使用微信支付能力）</li>
+        <li><strong>目的：</strong>微信登录、分享至微信（iOS 端积分充值通过 Apple App Store 完成，不使用微信支付）</li>
         <li><strong>收集信息范围：</strong>用户主动选择的图片/内容；经用户授权后主动选择的微信头像、昵称信息；为实现能力所必需，可能调用剪切板以在本应用与微信间传输信息；设备型号信息可能保存在设备本地用于表现适配</li>
         <li><strong>SDK 隐私政策链接：</strong><a href="https://support.weixin.qq.com/cgi-bin/mmsupportacctnodeweb-bin/pages/RYIYJkLOrQwu0nb8" target="_blank" rel="noopener">https://support.weixin.qq.com/cgi-bin/mmsupportacctnodeweb-bin/pages/RYIYJkLOrQwu0nb8</a></li>
       </ul>
