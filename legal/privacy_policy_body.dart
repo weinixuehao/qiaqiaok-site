@@ -17,7 +17,7 @@ String buildPrivacyPolicyBody({
   return '''
       <p>$companyName（以下简称「我们」）深知个人信息对您的重要性，将依法保护您的个人信息安全。本《隐私政策》适用于 $productLabel 应用（以下简称「本应用」）。</p>
 
-      <p class="legal-meta">生效日期：$year 年 1 月 1 日 · 更新日期：2026 年 11 月 9 日 · 运营方：$companyName · 官网：$siteDomain</p>
+      <p class="legal-meta">生效日期：$year 年 1 月 1 日 · 更新日期：2026 年 11 月 12 日 · 运营方：$companyName · 官网：$siteDomain</p>
 
       <p>请您在使用前仔细阅读本政策。我们可能对重要条款进行加粗或特别提示。您使用或继续使用本应用，即表示您理解并同意本政策；如您不同意，请停止使用。</p>
 
@@ -135,9 +135,10 @@ String buildPrivacyPolicyBody({
       <ul>
         <li><strong>SDK 名称：</strong>腾讯优量汇广告 SDK（Android：com.qq.e.union）</li>
         <li><strong>开发者：</strong>深圳市腾讯计算机系统有限公司</li>
-        <li><strong>目的：</strong>请求、展示信息流及激励视频广告，提供个性化广告，统计广告互动，并校验激励广告奖励</li>
-        <li><strong>收集信息范围：</strong>广告请求、展示、点击及播放完成记录；激励广告使用的用户 ID 和 request ID；Android 端 SDK 文档列出的设备标识信息（如设备 ID、Android ID、OAID、TAID、MAC 地址）、网络信息/IP 地址及基站信息（用于粗略位置）。当前 Android 接入未显式关闭这些可选项；实际读取仍受 SDK 版本及系统能力影响</li>
+        <li><strong>目的：</strong>请求、展示信息流及激励视频广告，提供个性化广告，统计广告互动，广告投放与反作弊，并校验激励广告奖励</li>
+        <li><strong>收集信息范围：</strong>广告请求、展示、点击及播放完成记录；激励广告使用的用户 ID 和 request ID；Android 端 SDK 文档列出的设备标识信息（如设备 ID、Android ID、OAID、TAID、MAC 地址）、网络信息/IP 地址及基站信息（用于粗略位置）；软件安装列表（应用安装信息，用于广告投放与反作弊）。当前 Android 接入未显式关闭这些可选项；实际读取仍受 SDK 版本及系统能力影响</li>
         <li><strong>隐私保护信息：</strong><a href="https://privacy.qq.com/" target="_blank" rel="noopener">腾讯隐私保护平台</a></li>
+        <li><strong>SDK 个人信息保护规则：</strong><a href="https://e.qq.com/dev/help_detail.html?cid=2005&pid=5983" target="_blank" rel="noopener">https://e.qq.com/dev/help_detail.html?cid=2005&amp;pid=5983</a></li>
       </ul>
 
       <p>更多共享情形详见应用内《个人信息第三方共享清单》。如未来接入其他 SDK，我们将更新本政策与共享清单并依法征得同意（无需同意的法定情形除外）。</p>
