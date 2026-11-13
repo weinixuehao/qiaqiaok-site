@@ -135,10 +135,13 @@ String buildPrivacyPolicyBody({
       <ul>
         <li><strong>SDK 名称：</strong>腾讯优量汇广告 SDK（Android：com.qq.e.union）</li>
         <li><strong>开发者：</strong>深圳市腾讯计算机系统有限公司</li>
-        <li><strong>目的：</strong>请求、展示信息流及激励视频广告，提供个性化广告，统计广告互动，广告投放与反作弊，并校验激励广告奖励</li>
-        <li><strong>收集信息范围：</strong>广告请求、展示、点击及播放完成记录；激励广告使用的用户 ID 和 request ID；Android 端 SDK 文档列出的设备标识信息（如设备 ID、Android ID、OAID、TAID、MAC 地址）、网络信息/IP 地址及基站信息（用于粗略位置）；软件安装列表（应用安装信息）；传感器信息（如加速度、磁力、重力、陀螺仪等，用于广告投放与反作弊）。当前 Android 接入未显式关闭这些可选项；实际读取仍受 SDK 版本及系统能力影响</li>
+        <li><strong>目的：</strong>请求、展示信息流及激励视频广告，提供个性化广告，广告投放、监测、归因与反作弊，统计广告互动，校验激励广告奖励，并保障 SDK 稳定运行</li>
+        <li><strong>使用场景：</strong>用户浏览或观看广告（含信息流、激励视频）时</li>
+        <li><strong>收集方式：</strong>SDK 本机采集</li>
+        <li><strong>收集信息范围：</strong>粗略位置信息（基站、附近的 WIFI、连接的 WIFI）；设备/网络/系统信息（设备制造商、品牌、设备型号、操作系统版本、屏幕分辨率、屏幕方向、屏幕 DPI、IP 地址、时区、网络类型、运营商、系统启动时间、系统语言、磁盘空间、电量、充电状态、屏幕亮度等）；标识符（如 OAID、Android ID、设备 ID、TAID、MAC 地址）；应用信息（宿主应用包名、版本号、进程名称、运行状态、可疑行为）；传感器信息（磁力、加速度、重力、陀螺仪等）；使用数据（产品交互数据、广告展示/点击/转化数据）；诊断数据（崩溃数据、性能数据）；激励广告使用的用户 ID 和 request ID。当前版本已通过 SDK 配置关闭「应用安装列表 / 已安装应用列表」采集；其余项实际读取仍受 SDK 版本及系统能力影响；部分信息可能在应用静默或后台运行时由 SDK 采集</li>
         <li><strong>隐私保护信息：</strong><a href="https://privacy.qq.com/" target="_blank" rel="noopener">腾讯隐私保护平台</a></li>
         <li><strong>SDK 个人信息保护规则：</strong><a href="https://e.qq.com/dev/help_detail.html?cid=2005&pid=5983" target="_blank" rel="noopener">https://e.qq.com/dev/help_detail.html?cid=2005&amp;pid=5983</a></li>
+        <li><strong>官方规则原文：</strong><a href="https://qzs.gdtimg.com/union/res/union_cdn/page/dev_rules/ylh_sdk_privacy_statement.html" target="_blank" rel="noopener">优量汇 SDK 个人信息保护规则</a></li>
       </ul>
 
       <p>更多共享情形详见应用内《个人信息第三方共享清单》。如未来接入其他 SDK，我们将更新本政策与共享清单并依法征得同意（无需同意的法定情形除外）。</p>
